@@ -19,10 +19,10 @@
           <a class="nav-link" href="index1.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="instructor.php">Students</a>
+          <a class="nav-link" href="instructor.php">Instructors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="section.php">Instructors</a>
+          <a class="nav-link" href="section.php">Sections</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="instructor-section.php">Full Table</a>
