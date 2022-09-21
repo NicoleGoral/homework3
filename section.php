@@ -5,10 +5,10 @@
   <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
-      <th>Prefix</th>
-      <th>Number</th>
-      <th>Description</th>
+      <th>Course ID</th>
+      <th>Section ID</th>
+      <th>Instructor ID</th>
+      <th>Section Number</th>
     </tr>
   </thead>
   <tbody>
