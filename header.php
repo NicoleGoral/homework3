@@ -25,7 +25,7 @@
           <a class="nav-link" href="section.php">Instructors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="instructor-section.php">Table4</a>
+          <a class="nav-link" href="instructor-section.php">Full Table</a>
         </li>
       </ul>
     </div>
