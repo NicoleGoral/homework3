@@ -2,6 +2,16 @@
 <!doctype html>
 <html lang="en">
 
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Prefix</th>
+      <th>Number</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
 <?php
 $servername = "localhost";
 $username = "ngoralou_homework3";
@@ -23,20 +33,19 @@ $result = $conn->query($sql);
     while($row = $result->fetch_assoc()) {
 
 
-        echo '<tr>
-              <table class="table table-striped">
+        echo '<tr>              
                   <td scope="row">' . $row["courseID"]. '</td>
                   <td>' . $row["coursePrefix"] .'</td>
                   <td> '.$row["courseNumber"] .'</td>
                   <td> '.$row["courseDescription"] .'</td>
-                   <br>
-                </table>
+                   <br>                
                 </tr>';
     }
 } else {
     echo "0 results";
 } 
 ?>
-       </tbody>
+       </tbody>    
+      </table>
     </div>
 </table>
