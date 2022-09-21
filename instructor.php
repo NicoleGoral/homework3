@@ -6,9 +6,7 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Prefix</th>
-      <th>Number</th>
-      <th>Description</th>
+      <th>Instructor Name</th>
     </tr>
   </thead>
   <tbody>
