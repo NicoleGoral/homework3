@@ -24,11 +24,13 @@ $result = $conn->query($sql);
 
 
         echo '<tr>
+              <table class="table table-striped">
                   <td scope="row">' . $row["courseID"]. '</td>
                   <td>' . $row["coursePrefix"] .'</td>
                   <td> '.$row["courseNumber"] .'</td>
                   <td> '.$row["courseDescription"] .'</td>
                    <br>
+                </table>
                 </tr>';
     }
 } else {
