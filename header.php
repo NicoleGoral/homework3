@@ -22,13 +22,13 @@
           <a class="nav-link" href="index1.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index2.php">Students</a>
+          <a class="nav-link" href="instructors.php">Students</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index3.php">Instructors</a>
+          <a class="nav-link" href="sections.php">Instructors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index4.php">Table4</a>
+          <a class="nav-link" href="instructor-section.php">Table4</a>
         </li>
       </ul>
     </div>
