@@ -16,16 +16,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="index1.php">Courses</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="instructors.php">Students</a>
+          <a class="nav-link" href="instructor.php">Students</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="sections.php">Instructors</a>
+          <a class="nav-link" href="section.php">Instructors</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="instructor-section.php">Table4</a>
