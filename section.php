@@ -7,7 +7,6 @@
     <tr>
       <th>Course ID</th>
       <th>Section ID</th>
-      <th>Instructor ID</th>
       <th>Section Number</th>
     </tr>
   </thead>
@@ -25,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT courseID, sectionID, instructorID, sectionNumber FROM section";
+$sql = "SELECT courseID, sectionID, sectionNumber FROM section";
 $result = $conn->query($sql);
        
  if ($result->num_rows > 0) {
@@ -36,7 +35,6 @@ $result = $conn->query($sql);
         echo '<tr>              
                   <td scope="row">' . $row["courseID"]. '</td>
                   <td>' . $row["sectionID"] .'</td>
-                  <td> '.$row["instructorID"] .'</td>
                   <td> '.$row["sectionNumber"] .'</td>
                    <br>                
                 </tr>';
