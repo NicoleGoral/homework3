@@ -5,8 +5,10 @@
   <table class="table table-striped">
   <thead>
     <tr>
-      <th>ID</th>
+      <th>Instructor ID</th>
       <th>Instructor Name</th>
+      <th>Course ID</th>
+      <th>Section ID</th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +25,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT instructorID, instructorName FROM section";
+$sql = "SELECT instructorID, instructorName, courseID, sectionID FROM instructor";
 $result = $conn->query($sql);
        
  if ($result->num_rows > 0) {
@@ -34,6 +36,8 @@ $result = $conn->query($sql);
         echo '<tr>              
                   <td scope="row">' . $row["instructorID"]. '</td>
                   <td>' . $row["instructorName"] .'</td>
+                  <td>' . $row["courseID"] .'</td>
+                  <td>' . $row["sectionID"] .'</td>
                    <br>                
                 </tr>';
     }
