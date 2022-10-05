@@ -22,7 +22,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$cid = $_POST["id"];
+$cid = $_POST["PrefixClass"];
 //echo $iid;
 $sql = "select courseID, prefix, number, description from Courses where courseID=" . $cid;
 //echo $sql;
