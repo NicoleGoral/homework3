@@ -31,7 +31,18 @@ $result = $conn->query($sql);
  if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-
+<tr>
+  <td><?=$row["courseID"]?></td>
+  <td><?=$row["prefix"]?></td>
+  <td><?=$row["number"]?></td>
+  <td><?=$row["description"]?></td>
+     <td>
+      <form method="post" action="postFilter.php">
+        <input type="hidden" name="id" value="<?=$row["prefix"]?>" />
+        <input type="submit" value="Chosen Prefix" />
+      </form>
+    </td>
+</tr>
 
         echo '<tr>              
                   <td scope="row">' . $row["courseID"]. '</td>
