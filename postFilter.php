@@ -24,7 +24,7 @@ if ($conn->connect_error) {
 }
 $prefix = $_POST["PrefixClass"];
 //echo $iid;
-$sql = "select courseID, prefix, number, description from course WHERE prefix like '" . $prefix . "'";
+$sql = "select courseID, coursePrefix, courseNumber, courseDescription from course WHERE coursePrefix like '" . $prefix . "'";
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -34,9 +34,9 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["courseID"]?></td>
-    <td><?=$row["prefix"]?></td>
-    <td><?=$row["number"]?></td>
-    <td><?=$row["description"]?></td>
+    <td><?=$row["coursePrefix"]?></td>
+    <td><?=$row["courseNumber"]?></td>
+    <td><?=$row["courseDescription"]?></td>
   </tr>
 <?php
   }
