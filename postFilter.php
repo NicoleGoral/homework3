@@ -8,10 +8,10 @@
   </thead>
   <tbody>
     <?php
-$servername = "localhost:3306";
-$username = "jeffreyn_user1";
-$password = "0w_zeP}]OVy0";
-$dbname = "jeffreyn_homework3";
+$servername = "localhost";
+$username = "ngoralou_homework3";
+$password = "Createou!";
+$dbname = "ngoralou_homework3";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
