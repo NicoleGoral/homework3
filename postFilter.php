@@ -1,5 +1,5 @@
 <?php require_once("header.php"); ?>
-    <h1>Supervisor's Managers</h1>
+    <h1>Courses</h1>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -22,9 +22,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$cid = $_POST["PrefixClass"];
+$prefix = $_POST["PrefixClass"];
 //echo $iid;
-$sql = "select courseID, prefix, number, description from Courses where courseID=" . $cid;
+$sql = "select courseID, prefix, number, description from Courses WHERE prefix like '" . $prefix . "'";
 //echo $sql;
     $result = $conn->query($sql);
 
