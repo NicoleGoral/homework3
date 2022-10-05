@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 }
 $cid = $_POST["id"];
 //echo $iid;
-$sql = "select manager_name from Manager m where m.supervisor_id=" . $cid;
+$sql = "select courseID, prefix, number, description from Courses where courseID=" . $cid;
 //echo $sql;
     $result = $conn->query($sql);
 
@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["manager_name"]?></td>
+    <td><?=$row["prefix"]?></td>
   </tr>
 <?php
   }
