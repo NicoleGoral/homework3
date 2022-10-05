@@ -3,7 +3,8 @@
 
 <form action="postFilter.php" method="post">
 
-Prefix : <input type="text" name="PrefixClass"><br>
+Prefix MIT or MGT: <input type="text" name="PrefixClass"><br>
 
-<input type="Post">
+<input type="submit">
     
+</form>
