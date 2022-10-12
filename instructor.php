@@ -50,7 +50,7 @@ $result = $conn->query($sql);
     </div>
 </table>
 
-//add instructor
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -72,6 +72,3 @@ $result = $conn->query($sql);
   </body>
 </html>
 
-//edit instructor
-
-//delete instructor
