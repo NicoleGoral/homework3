@@ -20,6 +20,29 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  switch ($_POST['saveType']) {
+    case 'Add':
+      $sqlAdd = "insert into instructor (InstructorName) value (?)";
+      $stmtAdd = $conn->prepare($sqlAdd);
+      $stmtAdd->bind_param("s", $_POST['iName']);
+      $stmtAdd->execute();
+      echo '<div class="alert alert-success" role="alert">New instructor added.</div>';
+      break;
+    case 'Edit':
+      $sqlEdit = "update instructor set InstructorName=? where InstructorID=?";
+      $stmtEdit = $conn->prepare($sqlEdit);
+      $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iid']);
+      $stmtEdit->execute();
+      echo '<div class="alert alert-success" role="alert">Instructor edited.</div>';
+    case 'Delete':
+      $sqlDelete = "delete from instructor where InstructorID=?";
+      $stmtDelete = $conn->prepare($sqlDelete);
+      $stmtDelete->bind_param("i", $_POST['iid']);
+      $stmtDelete->execute();
+      echo '<div class="alert alert-success" role="alert">Instructor deleted.</div>';
+  }
 $iName = $_POST['iName'];
 
 $sql = "insert into instructor (InstructorName) value (?)";
