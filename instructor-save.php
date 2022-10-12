@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtDelete->execute();
       echo '<div class="alert alert-success" role="alert">Instructor deleted.</div>';
   }
+}
 $iName = $_POST['iName'];
 
 $sql = "insert into instructor (InstructorName) value (?)";
