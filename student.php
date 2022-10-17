@@ -32,15 +32,14 @@ $result = $conn->query($sql);
     // output data of each row
     while($row = $result->fetch_assoc()) {
 
-
-        echo '<tr>              
-                  <td scope="row">' . $row["studentID"]. '</td>
-                  <td>' . $row["studentName"] .'</td>
-                  <td> '.$row["gradeLevel"] .'</td>
-                  <td> '.$row["courseID"] .'</td>
-                  <td><a href="index1.php?id=<?=$row["courseID"]?>Course info<?=$row["courseID"]?></a></td>
-                   <br>                
-                </tr>';
+<tr>
+  <td><?=$row["studentID"]?></td>
+  <td><?=$row["studentName"]?></td>
+  <td><?=$row["gradeLevel"]?></td>
+  <td><?=$row["courseID"]?></td>
+  <td><a href="index1.php?id=<?=$row["courseID"]?>"><?=$row["courseDescription"]?></a></td>
+</tr>
+       
     }
 } else {
     echo "0 results";
