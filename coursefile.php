@@ -19,7 +19,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$cid = $_GET["courseID"];
+$cid = $_GET["id"];
 $sql = "SELECT courseID, coursePrefix, courseNumber, courseDescription FROM course c Where courseID =" . $cid;
 $result = $conn->query($sql);
 
