@@ -37,7 +37,7 @@ $result = $conn->query($sql);
   <td><?=$row["studentName"]?></td>
   <td><?=$row["gradeLevel"]?></td>
   <td><?=$row["courseID"]?></td>
-  <td><a href="index1.php?id=<?=$row["courseID"]?>"><?=$row["courseID"]?></a></td>
+  <td><a href="coursefile.php?id=<?=$row["courseID"]?>"><?=$row["courseID"]?></a></td>
 </tr>
        
     }
