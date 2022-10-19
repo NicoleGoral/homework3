@@ -1,4 +1,5 @@
 <?php require_once("header.php"); ?>
+<h1>Courses</h1>
 <!doctype html>
 <html lang="en">
 
